@@ -2,19 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule  } from '@angular/forms';
 import { HttpModule }    from '@angular/http';
-import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { PostsComponent } from './components/posts/posts.component';
+import { TodosComponent } from './components/todos/todos.component';
 
-import {PostsService} from './services/posts.service';
+import {TodosService} from './services/todos.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    TodosComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +21,7 @@ import {PostsService} from './services/posts.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [PostsService],
+  providers: [TodosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

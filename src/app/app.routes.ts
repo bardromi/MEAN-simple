@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PostsComponent } from './components/posts/posts.component';
+import { TodosComponent } from './components/todos/todos.component';
 
 const routes: Routes = [
-  { path: ''     , redirectTo: 'posts'		, pathMatch: 'full'},
-  { path: 'posts', component: PostsComponent},
+  { path: ''     , redirectTo: 'todos'		, pathMatch: 'full'},
+  { path: 'todos', component: TodosComponent},
 ];
 
 @NgModule({

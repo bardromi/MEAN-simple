@@ -9,9 +9,9 @@ const router = express.Router();
 const axios = require('axios');
 const API = 'https://jsonplaceholder.typicode.com';
 
-// Get all posts
+// Get all todos
 router.get('/', (req, res) => {
-  // Get posts from the mock api
+  // Get todos from the mock api
   // This should ideally be replaced with a service that connects to MongoDB
   axios.get(`${API}/posts`)
     .then(posts => {

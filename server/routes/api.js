@@ -6,6 +6,8 @@ router.get('/', (req, res) => {
   res.send('api works');
 });
 
-router.use('/posts', require('./postsRouter'))
+//router.use('/posts', require('./postsRouter'));
+
+router.use('/todos', require('./todos'));
 
 module.exports = router;

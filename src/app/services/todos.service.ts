@@ -3,13 +3,13 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class PostsService {
+export class TodosService {
 
   constructor(private http: Http) { }
-
-  // Get all posts from the API
-  getAllPosts() {
-    return this.http.get('/api/posts')
+// /api/todos
+  // Get all todos from the API
+  getAllTodos() {
+    return this.http.get('/api/todos')
       .map(res => res.json());
   }
 }
