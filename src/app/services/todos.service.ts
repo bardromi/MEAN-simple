@@ -9,7 +9,7 @@ export class TodosService {
 // /api/todos
   // Get all todos from the API
   getAllTodos() {
-    return this.http.get('/api/todos')
+    return this.http.get('http://localhost:3000/api/todos')
       .map(res => res.json());
   }
 }
