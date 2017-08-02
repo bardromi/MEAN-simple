@@ -28,6 +28,10 @@ export class TodoService {
   updateTodo(todo) {
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this._http.put('http://localhost:3000/api/todos/'+todo._id, JSON.stringify(todo), {headers: headers});
+    return this._http.put('http://localhost:3000/api/todos/' + todo._id, JSON.stringify(todo), {headers: headers});
+  }
+
+  deleteTodo(id){
+    return this._http.delete('http://localhost:3000/api/todos/'+id);
   }
 }
